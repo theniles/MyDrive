@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:MyDrive.Maui.ViewModels"
+             x:Class="MyDrive.Maui.Views.HomePage"
+             Title="HomePage">
+    <ContentPage.BindingContext>
+        <vm:HomeViewModel/>
+    </ContentPage.BindingContext>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+        <Button HorizontalOptions="Start" Grid.Row="0" Text="Add Drive" Command="{Binding AddDriveCommand}"/>
+        <CollectionView Grid.Row="1" ItemsSource="{Binding Drives}">
+            
+        </CollectionView>
+    </Grid>
+</ContentPage>

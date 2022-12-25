@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyDrive.Maui.Resources.Styles.Brushes">
+    <LinearGradientBrush 
+        x:Key="FancyTitleBrush"
+        StartPoint="0.0, 0.0" 
+        EndPoint="1.0, 0.0">
+        <GradientStop Offset="0.6" Color="{StaticResource Primary}"/>
+        <GradientStop Offset="0.75" Color="{StaticResource Secondary}"/>
+        <GradientStop Offset="0.9" Color="{StaticResource Tertiary}"/>
+    </LinearGradientBrush>
+</ResourceDictionary>
